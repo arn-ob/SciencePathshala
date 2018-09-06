@@ -1,0 +1,16 @@
+<div class="container">
+    <br>
+    <form class="form-signin">
+      <img class="mb-4" src="../../assets/logo.png" alt="" width="300" height="300">
+      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+      
+      <label class="sr-only">Mobile Number</label>
+      <input type="email" class="form-control" placeholder="Mobile Number" [(ngModel)]="number" name="number">
+      
+      <label class="sr-only">Password</label>
+      <input type="password" class="form-control" placeholder="Password" [(ngModel)]="pass" name="pass">
+      <br><br>
+      <button class="btn btn-lg btn-primary btn-block" type="submit" (click)="signin()">Sign in</button>
+  
+    </form>
+  </div>

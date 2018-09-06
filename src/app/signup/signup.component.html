@@ -1,0 +1,21 @@
+<div class="container">
+    <br>
+    <form class="form-signin">
+      <img class="mb-4" src="../../assets/logo.png" alt="" width="300" height="300">
+      <h1 class="h3 mb-3 font-weight-normal">Please Give The Current Information</h1>
+
+      <label for="inputEmail" class="sr-only">Name</label>
+      <input type="email" class="form-control" placeholder="Name"  [(ngModel)]="name" name="name">
+      <br>
+      <label for="inputPassword" class="sr-only">Phone Number</label>
+      <input type="text" class="form-control" placeholder="Phone Number"  [(ngModel)]="number" name="number">
+      <br>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" class="form-control" placeholder="Password"  [(ngModel)]="password" name="password">
+      <br>
+      <label for="inputPassword" class="sr-only">Confirm Password</label>
+      <input type="password" class="form-control" placeholder="Confirm Password"  [(ngModel)]="conPassword" name="conPassword">
+      <br>
+      <button id="rock" type="submit" (click)="signup()"></button>
+    </form>
+  </div>
