@@ -18,13 +18,23 @@ import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { IndexComponent } from './index/index.component';
 import { FeedComponent } from './feed/feed.component';
+import { SubmitProblemComponent } from './submit-problem/submit-problem.component';
+import { IdeaComponent } from './idea/idea.component';
+import { EventComponent } from './event/event.component';
+import { ShopComponent } from './shop/shop.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 const appRoutes: Routes = [
   { path: '', component: IndexComponent },
   { path: 'signin', component: SigninComponent },
   { path: 'signup', component: SignupComponent },
-  { path: 'feed', component: FeedComponent }
+  { path: 'feed', component: FeedComponent },
+  { path: 'post', component: SubmitProblemComponent },
+  { path: 'idea', component: IdeaComponent },
+  { path: 'event', component: EventComponent },
+  { path: 'shop', component: ShopComponent },
+  { path: 'profile', component: ProfileComponent },
 ];
 
 @NgModule({
@@ -33,7 +43,12 @@ const appRoutes: Routes = [
     SigninComponent,
     SignupComponent,
     IndexComponent,
-    FeedComponent
+    FeedComponent,
+    SubmitProblemComponent,
+    IdeaComponent,
+    EventComponent,
+    ShopComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
